@@ -34,13 +34,19 @@ IMPORTANT: After generation, identity files are created in
 You MUST move them into your identity folder (example D:\identity_node1).
 
 Steps:
+
 	1.	Download the Windows identity CLI (identity_windows_amd64.zip) from the official Storj docs → Identity → Windows.
+ 
 Extract to C:\identity_windows_amd64\ (so you have identity.exe there).
+
 	2.	Request an auth token in Storj web UI (satellite). Format looks like you@email.com:LONG_TOKEN.
+ 
 	3.	PowerShell as Administrator:
+ 
 & "C:\identity_windows_amd64\identity.exe" create storagenode
 & "C:\identity_windows_amd64\identity.exe" authorize storagenode you@example.com:YOUR_AUTH_TOKEN
 (Optional) & "C:\identity_windows_amd64\identity.exe" verify storagenode
+
 	4.	Move the created files (ca.cert, ca.key, identity.cert, identity.key) from
 %AppData%\Storj\Identity\storagenode → D:\identity_node1.
 
