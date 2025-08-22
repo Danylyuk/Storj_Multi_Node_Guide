@@ -1,0 +1,13 @@
+# Example configuration for Storj Monitor Bot
+
+nodes:
+  - name: node1
+    url: "http://127.0.0.1:14002"
+  - name: node2
+    url: "http://127.0.0.1:14003"
+  - name: node3
+    url: "http://127.0.0.1:14004"
+
+alerts:
+  check_interval: 60   # seconds (як часто перевіряти офлайн ноди)
+  notify_on_recover: true   # сповіщати коли нода знову онлайн
